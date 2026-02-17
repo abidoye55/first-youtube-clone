@@ -1,0 +1,57 @@
+.column-row{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+column-gap: 15px;
+row-gap: 35px;
+}
+@media (max-width: 770px) {
+  .column-row{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 769px) and (max-width: 1000px) {
+  .column-row{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1000px) {
+   .column-row{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+.thumbnail-row{
+  margin-bottom: 8px;
+  position: relative;
+}
+.thumbnail{
+  width: 100%;
+}
+.column{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+.channel-profile-picture{
+  width: 36px;
+  border-radius: 25px;
+}
+
+.tittle{
+  font-weight: bold;
+  color: black;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+.authur{
+margin-bottom: 5px;
+}
+
+.video-time{
+  font-weight: 500;
+  font-size: 12px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  right: 5px;
+  bottom: 8px;
+  padding: 4px;
+}
